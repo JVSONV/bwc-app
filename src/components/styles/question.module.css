@@ -1,0 +1,38 @@
+.faq_item {
+  margin: 1rem 0;
+  padding: 1rem 1rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.dropdown_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggle {
+  display: block;
+}
+
+/* .toggle.active {
+  transform: rotate(180deg);
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+} */
+
+.question {
+  font-size: 1.1rem;
+}
+
+.answer {
+  height: 0;
+  overflow: hidden;
+  font-size: 1.1rem;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.answer.active {
+  padding: 1rem 0 0;
+  height: auto;
+  max-height: 350px;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}

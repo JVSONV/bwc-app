@@ -1,0 +1,65 @@
+.contact_container {
+  padding: 2rem;
+}
+
+.form__container {
+margin: 0 auto;
+max-width: 600px;
+text-align: center;
+}
+
+.contact_label {
+  margin: 2rem auto 4rem;
+  width: 290px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  border-bottom: 2px solid black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form .name {
+  padding: 5px;
+  background: transparent;
+  border: 2px solid #000;
+  border-radius: 0.1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+form .name:focus {
+  outline: none;
+}
+
+form textarea {
+  padding: 5px;
+  background: transparent;
+  border: 2px solid #000;
+  border-radius: 0.1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.honeypot {
+  display: none;
+}
+
+form button {
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  color: hsl(52deg 29% 80%);
+  width: fit-content;
+  border: 2px solid hsl(12deg 41% 31%);
+  border-radius: 0.2rem;
+  background-color: hsl(12deg 41% 31%);
+}
+
+.thankyou__message {
+  color: black;
+  padding: 4rem;
+}

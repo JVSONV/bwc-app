@@ -1,23 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+// import { useState } from "react";
+import "./App.css";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Faq from "./components/Faq";
+import Footer from "./components/Footer";
+import Gallery from "./components/Gallery";
+import Hero from "./components/Hero";
+import Navigation from "./components/Navigation";
+import Testimonials from "./components/Testimonials";
+import mail from "./images/Contact.svg";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigation />
+      <main>
+        <section className="hero">
+          <Hero />
+        </section>
+        <section className="about">
+          <About />
+        </section>
+        <section className="gallery">
+          <Gallery />
+        </section>
+        <section>
+          <Testimonials />
+        </section>
+        <section>
+          <Contact />
+        </section>
+        <section>
+          <Faq />
+        </section>
+      </main>
+      <Footer />
+      <a className="contact_button" href="#contact">
+        <img
+          className="contact_icon"
+          src={mail}
+          alt="Contact via e-mail icon"
+        />
+      </a>
     </div>
   );
 }

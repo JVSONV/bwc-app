@@ -1,0 +1,28 @@
+.container {
+  padding: 0 2rem;
+}
+
+.nav_container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.nav_list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  list-style: none;
+}
+
+.nav_link {
+  color:hsl(52deg 29% 80%);
+  text-decoration: none;
+}
+
+.logo {
+  max-width: 100px;
+  display: block;
+  padding: 5px;
+  border: 1px solid hsl(52deg 29% 80%);
+}

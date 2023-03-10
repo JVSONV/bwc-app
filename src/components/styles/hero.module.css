@@ -1,0 +1,49 @@
+.hero {
+  /* padding: 13vh 1rem; */
+  padding: 0;
+  background-size: cover;
+  background-color: rgba(51, 51, 51, 0.713);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  color: white;
+  text-align: center;
+}
+
+.hero_alt {
+  width: 100%;
+  position: relative;
+  padding: 13vh 1rem;
+}
+
+.porch {
+  display: none;
+}
+
+.hero_title {
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.home {
+  display: block;
+  margin: 0 auto;
+  width: 10rem;
+  transform: translateY(-10%);
+}
+
+@media (min-width: 1500px) {
+  .hero {
+    background-position: center bottom -100px;
+  }
+}
+
+@media (min-width:1760px) {
+  .hero {
+    background-position: center bottom -160px;
+  }
+  .hero_alt {
+    padding: 25vh 1rem
+  }
+}
